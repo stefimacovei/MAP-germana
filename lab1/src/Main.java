@@ -1,0 +1,24 @@
+import UniNoten.UniNoten;
+import NurArray.NurArray;
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+        int sizedoesntmatter=5;
+        //NurArray myArray = new NurArray(sizedoesntmatter);
+        //int caca=myArray.SumMin();
+        //System.out.println(caca);
+
+        int[] test={29, 37, 38, 41, 84, 67};
+        UniNoten uni=new UniNoten();
+        //int[] test1=uni.abgerundete_noten(test);
+        //for(int i=0; i<test1.length; i++)
+          //  System.out.println(test1[i]);
+        //int[] test2=uni.nicht_ausreichend(test);
+        //for(int i=0; i<test2.length; i++)
+          //  System.out.println(test2[i]);
+        double test3=uni.duschschnittliche_note(test);
+        System.out.println(test3);
+        int test4=uni.maximale_abgerundete_note(test);
+        System.out.println(test4);
+    }
+}
