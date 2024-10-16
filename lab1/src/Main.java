@@ -39,7 +39,7 @@ public class Main {
 
         int[] test7=gz.division(zahl2, 3);
         for(int i=0; i<test7.length; i++)
-            System.out.print(test7[i]); //eroare kill me pls
+            System.out.print(test7[i]); //trying again
 
     }
 }
