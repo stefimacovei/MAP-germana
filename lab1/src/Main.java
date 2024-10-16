@@ -1,6 +1,7 @@
 import UniNoten.UniNoten;
 import GroßeZahlen.GrosseZahlen;
 import NurArray.NurArray;
+import Markus.Markus;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
@@ -22,6 +23,10 @@ public class Main {
         int test4=uni.maximale_abgerundete_note(test);
         System.out.println(test4);
 
+        Markus fuckmarcus=new Markus();
+        int ceva=fuckmarcus.combo(60);
+        System.out.println(ceva);
+
         int[] zahl1={1,3,0,0,0,0,0,0,0};
         int[] zahl2={8,7,0,0,0,0,0,0,0};
         int[] zahl3={2,0,0};
@@ -29,12 +34,13 @@ public class Main {
         GrosseZahlen gz=new GrosseZahlen();
         int[] test5=gz.differenz(zahl2, zahl1);
         //for(int i=0; i<test5.length; i++)
-          //  System.out.print(test5[i]);
+        //  System.out.print(test5[i]);
         int[] test6=gz.multiplikation(zahl1,3);
 
         int[] test7=gz.division(zahl2, 3);
         for(int i=0; i<test7.length; i++)
             System.out.print(test7[i]);
+
 
     }
 }

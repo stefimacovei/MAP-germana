@@ -9,7 +9,7 @@ public class NurArray {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ich bin hungrig für " + size + " Zählen:");
         for (int i = 0; i < size; i++) {
-            numbers[i] = scanner.nextInt();  // Read an integer from the keyboard
+            numbers[i] = scanner.nextInt();
         }
     }
 
