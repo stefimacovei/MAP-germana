@@ -1,4 +1,5 @@
 import UniNoten.UniNoten;
+import GroßeZahlen.GrosseZahlen;
 import NurArray.NurArray;
 public class Main {
     public static void main(String[] args) {
@@ -20,5 +21,20 @@ public class Main {
         System.out.println(test3);
         int test4=uni.maximale_abgerundete_note(test);
         System.out.println(test4);
+
+        int[] zahl1={1,3,0,0,0,0,0,0,0};
+        int[] zahl2={8,7,0,0,0,0,0,0,0};
+        int[] zahl3={2,0,0};
+        int[] zahl4={1,9,9};
+        GrosseZahlen gz=new GrosseZahlen();
+        int[] test5=gz.differenz(zahl2, zahl1);
+        //for(int i=0; i<test5.length; i++)
+          //  System.out.print(test5[i]);
+        int[] test6=gz.multiplikation(zahl1,3);
+
+        int[] test7=gz.division(zahl2, 3);
+        for(int i=0; i<test7.length; i++)
+            System.out.print(test7[i]);
+
     }
 }
