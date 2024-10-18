@@ -33,18 +33,19 @@ public class NurArray {
         int minwert=this.MinZahl();
         int maxsum=0;
         for(int i=0; i<numbers.length; i++){
-            if(numbers[i]!=minwert) maxsum=maxsum+=numbers[i];
+             maxsum=maxsum+=numbers[i];
         }
-        return maxsum;
+        return maxsum-minwert;
     }
 
     public int SumMin(){
         int maxwert=this.MaxZahl();
         int minsum=0;
         for(int i=0; i<numbers.length; i++){
-            if(numbers[i]!=maxwert) minsum=minsum+=numbers[i];
+             minsum=minsum+=numbers[i];
         }
-        return minsum;
+
+        return minsum-maxwert;
     }
 
 }
